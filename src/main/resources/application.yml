@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/your_db_name
+    username: your_username
+    password: your_password
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update       # 개발 중엔 update, 초기엔 create-drop도 가능
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
